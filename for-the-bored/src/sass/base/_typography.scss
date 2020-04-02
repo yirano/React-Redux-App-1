@@ -1,0 +1,35 @@
+@use "sass:meta";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+$main-font: 'Poppy',
+sans-serif;
+
+body {
+  color: $very-dark-violet;
+  font-family: $main-font;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
