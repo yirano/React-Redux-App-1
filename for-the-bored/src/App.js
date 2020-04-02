@@ -1,9 +1,9 @@
 import React from "react";
-import SearchBarContainer from './Pages/SearchBarContainer'
-import ShortenedURLContainer from './Pages/ShortenedURLContainer'
-import HeaderContainer from "./Pages/HeaderContainer";
-import FeaturesContainer from "./Pages/FeaturesContainer";
-import CallToActionContainer from "./Pages/CallToActionContainer";
+import SearchBarContainer from './Containers/SearchBarContainer'
+import ShortenedURLContainer from './Containers/ShortenedURLContainer'
+import HeaderContainer from "./Containers/HeaderContainer";
+import FeaturesContainer from "./Containers/FeaturesContainer";
+import CallToActionContainer from "./Containers/CallToActionContainer";
 import Footer from "./Components/Footer";
 
 function App() {
