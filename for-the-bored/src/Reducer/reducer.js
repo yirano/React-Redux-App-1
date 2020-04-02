@@ -1,4 +1,4 @@
-import { SHORTEN_URL, SHORTEN_URL_ERROR, SHORTEN_URL_SUCCESS } from "../Actions/actions";
+import { SHORTEN_URL, SHORTEN_URL_ERROR, SHORTEN_URL_SUCCESS, HANDLE_CHANGE } from "../Actions/actions";
 
 const initialState = {
   url: '',
@@ -16,7 +16,11 @@ const reducer = (state = initialState, action) => {
       }
     case SHORTEN_URL_SUCCESS:
       return {
-        ...state, data: [action.payload]
+        ...state, data: [...state.data, action.payload]
+      }
+    case HANDLE_CHANGE:
+      return {
+        url: action.payload
       }
     default:
       return state
