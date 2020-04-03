@@ -2,9 +2,14 @@ import React from 'react'
 
 const Jumbotron = () => {
   return (
-    <div>
-      <h1>This is Jumbotron</h1>
-    </div>
+    <>
+      <div className="jumboLeft">
+        <h1>More than just shorter links</h1>
+        <p className="jumboCaption">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <button className="jumboButton">Get Started</button>
+      </div>
+      <div className="jumboRight"></div>
+    </>
   )
 }
 

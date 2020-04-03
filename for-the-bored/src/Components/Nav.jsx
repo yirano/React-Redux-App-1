@@ -18,8 +18,8 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navRight">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button className="login">Login</button>
+        <button className="signUp">Sign Up</button>
       </div>
     </nav>
   );

@@ -2,14 +2,42 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
+    align-items: center;
   .navLeft {
     display: flex;
-
+        align-items: center;
+    h4 {
+      padding-right: 15px;
+    }
     ul {
       display: flex;
+      li {
+        padding: 0 10px;
+        a{
+          font-size: 0.8rem;
+          color: $grayish-violet;
+          text-decoration: none;
+          font-weight: 700;
+          
+        }
+      }
     }
   }
 
-  .navRight {}
+  .navRight {
+    button {
+      margin: 0 10px;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      &.login {
+        color: $grayish-violet;
+      }
+      &.signUp {
+        background-color: $cyan;
+        color: white;
+      }
+    }
+  }
 }
