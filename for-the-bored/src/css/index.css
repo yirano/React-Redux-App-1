@@ -3,6 +3,9 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+body {
+  box-sizing: border-box; }
+
 html,
 body,
 div,
@@ -142,7 +145,7 @@ h4 {
   color: #35323e; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4.9rem; }
 
 h2 {
   font-size: 2.4rem; }
@@ -151,10 +154,43 @@ h3 {
   font-size: 2rem; }
 
 h4 {
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
+
+nav {
+  display: flex;
+  padding: 0 11%;
+  justify-content: space-between;
+  align-items: center; }
+  nav .navLeft {
+    display: flex;
+    align-items: center; }
+    nav .navLeft h3 {
+      margin-right: 25px; }
+    nav .navLeft ul {
+      display: flex; }
+      nav .navLeft ul li {
+        padding: 0 15px; }
+        nav .navLeft ul li a {
+          font-size: 1rem;
+          color: #9e9aa7;
+          text-decoration: none; }
+  nav .navRight button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid transparent; }
+    nav .navRight button.login {
+      background-color: transparent;
+      color: #9e9aa7; }
+    nav .navRight button.signUp {
+      background-color: #2acfcf;
+      color: white; }
 
 .jumbotron {
-  height: 470px;
+  padding: 0 11%;
+  height: 88vh;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -162,9 +198,11 @@ h4 {
   .jumbotron .jumboLeft {
     width: 54%; }
     .jumbotron .jumboLeft h1 {
-      line-height: 4.2rem; }
+      line-height: 5.4rem; }
     .jumbotron .jumboLeft .jumboCaption {
-      color: #9e9aa7; }
+      color: #9e9aa7;
+      line-height: 2.2rem;
+      font-size: 1.4rem; }
   .jumbotron .jumboRight {
     width: 43%;
     z-index: -999; }
@@ -172,39 +210,57 @@ h4 {
       width: 145%;
       margin-right: -300px; }
 
-nav {
+form {
+  position: relative;
+  top: 80px;
+  height: 160px;
+  background: transparent;
+  border: 2px solid blue; }
+
+.features {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center; }
-  nav .navLeft {
-    display: flex;
-    align-items: center; }
-    nav .navLeft h4 {
-      padding-right: 15px; }
-    nav .navLeft ul {
-      display: flex; }
-      nav .navLeft ul li {
-        padding: 0 10px; }
-        nav .navLeft ul li a {
-          font-size: 0.8rem;
-          color: #9e9aa7;
-          text-decoration: none;
-          font-weight: 700; }
-  nav .navRight button {
-    margin: 0 10px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: 700;
-    border: 1px solid transparent; }
-    nav .navRight button.login {
+  flex-direction: column;
+  background: #F0F1F6;
+  padding: 10% 11%;
+  justify-content: center; }
+  .features .featuresTop {
+    margin: 0 auto;
+    width: 47%;
+    text-align: center;
+    padding-bottom: 80px;
+    line-height: 2rem; }
+    .features .featuresTop h2 {
+      line-height: 4rem; }
+    .features .featuresTop .featuresCaption {
       color: #9e9aa7; }
-    nav .navRight button.signUp {
-      background-color: #2acfcf;
-      color: white; }
+  .features .featuresBottom {
+    display: flex;
+    justify-content: space-between; }
+    .features .featuresBottom .featuresCard {
+      position: relative;
+      display: flex;
+      height: 200px;
+      width: 26%;
+      background: white;
+      border-radius: 7px;
+      padding: 4% 3%;
+      flex-flow: column;
+      justify-content: flex-end; }
+      .features .featuresBottom .featuresCard h4 {
+        line-height: 4rem; }
+      .features .featuresBottom .featuresCard .cardIcon {
+        position: absolute;
+        top: -40px;
+        background: #3b3054;
+        padding: 20px;
+        border-radius: 50%; }
+      .features .featuresBottom .featuresCard .cardCaption {
+        color: #9e9aa7;
+        font-size: 0.99rem;
+        line-height: 1.7rem; }
 
 body {
-  padding: 3% 11%;
+  padding: 3% 0;
   max-width: 1440px; }
 
 /*# sourceMappingURL=index.css.map */

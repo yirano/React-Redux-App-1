@@ -1,0 +1,59 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  background: $light-gray;
+  padding: 10% 11%;
+  justify-content: center;
+
+  .featuresTop {
+    margin: 0 auto;
+    width: 47%;
+    text-align: center;
+    padding-bottom: 80px;
+    line-height: 2rem;
+
+    h2 {
+      line-height: 4rem;
+    }
+
+    .featuresCaption {
+      color: $grayish-violet;
+    }
+  }
+
+  .featuresBottom {
+    display: flex;
+    justify-content: space-between;
+
+    .featuresCard {
+      position: relative;
+      display: flex;
+      height: 200px;
+      width: 26%;
+      background: white;
+      border-radius: 7px;
+      padding: 4% 3%;
+      flex-flow: column;
+      justify-content: flex-end;
+
+      h4 {
+        line-height: 4rem;
+      }
+
+      .cardIcon {
+        position: absolute;
+        top: -40px;
+        background: $dark-violet;
+        padding: 20px;
+        border-radius: 50%;
+      }
+
+      .cardCaption {
+        color: $grayish-violet;
+        font-size: 0.99rem;
+        line-height: 1.7rem;
+      }
+    }
+
+  }
+}

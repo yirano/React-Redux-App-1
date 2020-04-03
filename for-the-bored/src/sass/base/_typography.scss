@@ -1,34 +1,35 @@
 @use "sass:meta";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
 
-$main-font: 'Poppins', sans-serif;
+$main-font: 'Poppins',
+sans-serif;
 
 body {
-	color: $very-dark-violet;
-	font-family: $main-font;
-	font-size: 18px;
+  color: $very-dark-violet;
+  font-family: $main-font;
+  font-size: 18px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-weight: 700;
-	color: $very-dark-blue;
+  font-weight: 700;
+  color: $very-dark-blue;
 }
 
 h1 {
-	font-size: 4rem;
+  font-size: 4.9rem;
 }
 
 h2 {
-	font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 h3 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 h4 {
-	font-size: 1.5rem;
+  font-size: 1.4rem;
 }

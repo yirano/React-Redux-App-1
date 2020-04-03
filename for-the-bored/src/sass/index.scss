@@ -7,9 +7,10 @@
 
 @import 'modules/buttons';
 
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/form';
+@import 'layout/features';
 @import 'layout/cta';
 @import 'layout/footer';
-@import 'layout/form';
-@import 'layout/header';
-@import 'layout/navigation';
 @import 'pages/home';
