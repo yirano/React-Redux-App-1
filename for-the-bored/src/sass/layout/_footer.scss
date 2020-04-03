@@ -2,14 +2,42 @@ footer {
   display: flex;
   background-color: $very-dark-violet;
   color: $light-gray;
+  justify-content: space-between;
+  padding: 4% 11% 8%;
+
+  .footerFirst {
+    width: 30%;
+  }
 
   .footerSecond {
     display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+    ul {
+      line-height: 2.3rem;
+      font-size: 1rem;
+
+      li {
+        font-weight: 400;
+
+        &:first-of-type {
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .footerThird {
+    width: 30%;
+
     ul {
       display: flex;
+      justify-content: flex-end;
+
+      li {
+        padding: 0 5px;
+      }
     }
   }
 }
