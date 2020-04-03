@@ -262,7 +262,24 @@ nav {
     margin: 10px 11.5%;
     padding: 20px;
     background-color: white;
-    border-radius: 6px; }
+    border-radius: 6px;
+    display: flex;
+    align-items: center; }
+    .shortenedURLContainer li .leftLink {
+      width: 70%; }
+    .shortenedURLContainer li .rightLink {
+      width: 30%; }
+      .shortenedURLContainer li .rightLink a {
+        color: #2acfcf;
+        text-decoration: none; }
+      .shortenedURLContainer li .rightLink button {
+        background: #2acfcf;
+        color: #F0F1F6;
+        border: none;
+        border-radius: 10px;
+        padding: 11px 25px;
+        margin-left: 15px;
+        font-size: 1rem; }
 
 .features {
   display: flex;

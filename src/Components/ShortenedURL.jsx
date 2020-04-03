@@ -10,14 +10,20 @@ const ShortenedURL = () => {
       <ul>
         {data.map(data => {
           return (
-            <li>
-              <a
-                href={`https://rel.ink/${data.hashid}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://rel.ink/{data.hashid}
-              </a>
+            <li className="links">
+              <div className="leftLink">
+                <p>{data.url}</p>
+              </div>
+              <div className="rightLink">
+                <a
+                  href={`https://rel.ink/${data.hashid}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://rel.ink/{data.hashid}
+                </a>
+                <button>Copy!</button>
+              </div>
             </li>
           );
         })}
