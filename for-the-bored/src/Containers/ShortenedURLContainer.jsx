@@ -1,10 +1,8 @@
-import React from 'react'
-import ShortenedURL from '../Components/ShortenedURL'
+import React from "react";
+import ShortenedURL from "../Components/ShortenedURL";
 
 const ShortenedURLContainer = () => {
-  return (
-    <ShortenedURL />
-  )
-}
+  return <ShortenedURL />;
+};
 
-export default ShortenedURLContainer
+export default ShortenedURLContainer;

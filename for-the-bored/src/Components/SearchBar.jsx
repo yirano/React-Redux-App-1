@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as actions from "../Actions/actions";
+import ShortenedURL from "../Components/ShortenedURL";
 
 const SearchBar = () => {
   const [value, setValue] = useState();
@@ -28,6 +29,7 @@ const SearchBar = () => {
         />
         <button>Shorten It!</button>
       </form>
+      <ShortenedURL />
     </div>
   );
 };
