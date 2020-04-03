@@ -26,7 +26,7 @@ const SearchBar = () => {
           onChange={e => handleChange(e)}
           placeholder="Search Here"
         />
-        <input type="submit" />
+        <button>Shorten URL</button>
       </form>
     </div>
   );
