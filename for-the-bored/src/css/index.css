@@ -210,12 +210,32 @@ nav {
       width: 145%;
       margin-right: -300px; }
 
-form {
+.searchBarContainer {
+  display: flex;
   position: relative;
   top: 80px;
   height: 160px;
-  background: transparent;
-  border: 2px solid blue; }
+  width: 77%;
+  margin: 0 auto;
+  background-image: url("/imgs/bg-shorten-desktop.svg");
+  background-color: #3b3054;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center; }
+  .searchBarContainer form {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; }
+    .searchBarContainer form input[type='text'] {
+      width: 65%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 0px; }
+    .searchBarContainer form input[type='submit'] {
+      padding: 20px 60px;
+      background-color: #2acfcf;
+      border-radius: 10px;
+      border: 1px solid #2acfcf; }
 
 .features {
   display: flex;

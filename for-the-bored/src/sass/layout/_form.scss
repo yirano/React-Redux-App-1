@@ -1,7 +1,34 @@
-form {
+.searchBarContainer {
+  display: flex;
   position: relative;
   top: 80px;
   height: 160px;
-  background: transparent;
-  border: 2px solid blue;
+  width: 77%;
+  margin: 0 auto;
+  background-image: url('/imgs/bg-shorten-desktop.svg');
+  background-color: $dark-violet;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    input[type='text'] {
+      width: 65%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 0px;
+    }
+
+    input[type='submit'] {
+      padding: 20px 60px;
+      background-color: $cyan;
+      border-radius: 10px;
+      border: 1px solid $cyan;
+
+    }
+  }
 }
