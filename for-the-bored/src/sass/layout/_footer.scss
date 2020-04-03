@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  background-color: $very-dark-violet;
+  color: $light-gray;
+
+  .footerSecond {
+    display: flex;
+  }
+
+  .footerThird {
+    ul {
+      display: flex;
+    }
+  }
+}
