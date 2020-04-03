@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <HeaderContainer />
       <SearchBarContainer />
-      {/* <ShortenedURLContainer /> */}
+      <ShortenedURLContainer />
       <FeaturesContainer />
       <CallToActionContainer />
       <Footer />

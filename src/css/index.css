@@ -221,16 +221,18 @@ nav {
 
 .searchBarContainer {
   display: flex;
+  flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 128px;
   height: 160px;
   width: 77%;
   margin: 0 auto;
-  background-image: url("/imgs/bg-shorten-desktop.svg");
-  background-color: #3b3054;
   border-radius: 10px;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url("/imgs/bg-shorten-desktop.svg");
+  background-color: #3b3054;
+  z-index: 999; }
   .searchBarContainer form {
     display: flex;
     width: 90%;
@@ -250,6 +252,17 @@ nav {
       font-weight: 600;
       border: none;
       border-radius: 6px; }
+
+.shortenedURLContainer {
+  background-color: #F0F1F6;
+  top: 52px;
+  position: relative;
+  padding-top: 107px; }
+  .shortenedURLContainer li {
+    margin: 10px 11.5%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px; }
 
 .features {
   display: flex;

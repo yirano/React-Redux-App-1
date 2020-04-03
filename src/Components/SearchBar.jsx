@@ -18,7 +18,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="searchBarContainer">
+    <>
       <form onSubmit={e => handleSubmit(e)}>
         <input
           type="text"
@@ -29,8 +29,7 @@ const SearchBar = () => {
         />
         <button>Shorten It!</button>
       </form>
-      <ShortenedURL />
-    </div>
+    </>
   );
 };
 

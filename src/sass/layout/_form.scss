@@ -1,15 +1,17 @@
 .searchBarContainer {
   display: flex;
+  flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 128px;
   height: 160px;
   width: 77%;
   margin: 0 auto;
-  background-image: url('/imgs/bg-shorten-desktop.svg');
-  background-color: $dark-violet;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  background-image: url('/imgs/bg-shorten-desktop.svg');
+  background-color: $dark-violet;
+  z-index: 999;
 
   form {
     display: flex;
@@ -35,4 +37,17 @@
       border-radius: 6px;
     }
   }
+}
+
+.shortenedURLContainer {
+    background-color: $light-gray;
+    top: 52px;
+    position: relative;
+    padding-top: 107px;
+    li {
+      margin: 10px 11.5%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 6px;
+    }
 }
