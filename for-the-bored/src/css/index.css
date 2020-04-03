@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
 html,
 body,
 div,
@@ -131,18 +131,18 @@ table {
 @use "sass:meta";
 body {
   color: #232127;
-  font-family: "Poppy", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px; }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: 700; }
+  font-weight: 700;
+  color: #35323e; }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700; }
+  font-size: 4rem; }
 
 h2 {
   font-size: 2.4rem; }
@@ -152,6 +152,25 @@ h3 {
 
 h4 {
   font-size: 1.5rem; }
+
+.jumbotron {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+  .jumbotron .jumboLeft {
+    width: 54%; }
+    .jumbotron .jumboLeft h1 {
+      line-height: 4.2rem; }
+    .jumbotron .jumboLeft .jumboCaption {
+      color: #9e9aa7; }
+  .jumbotron .jumboRight {
+    width: 43%;
+    z-index: -999; }
+    .jumbotron .jumboRight img {
+      width: 145%;
+      margin-right: -300px; }
 
 nav {
   display: flex;

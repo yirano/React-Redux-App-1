@@ -1,0 +1,24 @@
+.jumbotron {
+	height: 470px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	.jumboLeft {
+		width: 54%;
+		h1 {
+			line-height: 4.2rem;
+		}
+		.jumboCaption {
+			color: $grayish-violet;
+		}
+	}
+	.jumboRight {
+		width: 43%;
+		z-index: -999;
+		img {
+			width: 145%;
+			margin-right: -300px;
+		}
+	}
+}
