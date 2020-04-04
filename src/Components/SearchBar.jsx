@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import * as actions from "../Actions/actions";
-import ShortenedURL from "../Components/ShortenedURL";
 
 const SearchBar = () => {
   const [value, setValue] = useState();
@@ -34,5 +33,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-
-// https://twitter.com/search?q=%23secondwave&src=trend_click

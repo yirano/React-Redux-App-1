@@ -13,7 +13,7 @@ const Features = () => {
       <div className="featuresBottom">
         <div className="featuresCard">
           <div className="cardIcon">
-            <img src="/imgs/icon-detailed-records.svg" />
+            <img src="/imgs/icon-detailed-records.svg" alt="detailed records card" />
           </div>
           <h4>Brand Recognition</h4>
           <p className="cardCaption">
@@ -23,7 +23,7 @@ const Features = () => {
         </div>
         <div className="featuresCard">
           <div className="cardIcon">
-            <img src="/imgs/icon-fully-customizable.svg" />
+            <img src="/imgs/icon-fully-customizable.svg" alt="fully customizable card" />
           </div>
           <h4>Detailed Records</h4>
           <p className="cardCaption">
@@ -33,7 +33,7 @@ const Features = () => {
         </div>
         <div className="featuresCard">
           <div className="cardIcon">
-            <img src="/imgs/icon-brand-recognition.svg" />
+            <img src="/imgs/icon-brand-recognition.svg" alt="brand recognition" />
           </div>
           <h4>Fully Customizable</h4>
           <p className="cardCaption">

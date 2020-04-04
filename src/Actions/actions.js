@@ -6,7 +6,6 @@ export const SHORTEN_URL_ERROR = 'SHORTEN_URL_ERROR'
 export const HANDLE_CHANGE = 'HANDLE_CHANGE'
 
 export const shortenURL = (url) => {
-  // e.preventD
   const promise = axios.post("https://rel.ink/api/links/", { "url": url })
   return dispatch => {
     dispatch({ type: SHORTEN_URL })
@@ -17,7 +16,7 @@ export const shortenURL = (url) => {
       })
       .catch(err => {
         console.log(err);
-        dispatch({ type: SHORTEN_URL_ERROR })
+        dispatch({ type: SHORTEN_URL_ERROR, payload: err })
       })
   }
 

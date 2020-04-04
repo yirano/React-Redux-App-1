@@ -8,19 +8,22 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case SHORTEN_URL:
       return {
-        ...state, fetchingURL: true
+        ...state, fetchingURL: true, error: ''
       }
     case SHORTEN_URL_SUCCESS:
       return {
-        ...state, data: [...state.data, action.payload]
+        ...state, data: [...state.data, action.payload], fetchingURL: false, error: ''
       }
     case HANDLE_CHANGE:
       return {
-        url: action.payload
+        url: action.payload, ...state, error: ''
+      }
+    case SHORTEN_URL_ERROR:
+      return {
+        ...state, error: action.payload
       }
     default:
       return state

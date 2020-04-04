@@ -12,7 +12,7 @@ const Jumbotron = () => {
         <button className="jumboButton">Get Started</button>
       </div>
       <div className="jumboRight">
-        <img src="../../imgs/illustration-working.svg" />
+        <img src="../../imgs/illustration-working.svg" alt="illustration working" />
       </div>
     </div>
   );
