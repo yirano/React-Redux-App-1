@@ -1,0 +1,23 @@
+.callToAction {
+	background: url('/imgs/bg-boost-desktop.svg') no-repeat;
+	background-size: cover;
+	background-color: $dark-violet;
+	padding: 5%;
+	text-align: center;
+
+	h2 {
+		color: $light-gray;
+		line-height: 4rem;
+	}
+
+	button {
+		background-color: $cyan;
+		padding: 14px 40px;
+		margin-top: 20px;
+		color: $light-gray;
+		font-size: 1.3rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 40px;
+	}
+}

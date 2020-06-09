@@ -1,0 +1,43 @@
+.jumbotron {
+  padding: 0 11%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .jumboLeft {
+    width: 54%;
+
+    h1 {
+      line-height: 5.4rem;
+    }
+
+    .jumboCaption {
+      color: $grayish-violet;
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+    }
+
+    button {
+      background-color: $cyan;
+      padding: 14px 40px;
+      margin-top: 20px;
+      color: $light-gray;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 40px;
+    }
+  }
+
+  .jumboRight {
+    width: 43%;
+    z-index: -999;
+
+    img {
+      width: 145%;
+      margin-right: -300px;
+    }
+  }
+}
